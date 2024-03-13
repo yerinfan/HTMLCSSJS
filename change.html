@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changeCoin</title>
+</head>
+<body>
+    <script>
+        let change = prompt("금액을 입력하세요(원) : ");
+        let num_500 = parseInt(change / 500);
+        let num_100 = parseInt((change % 500) / 100);
+
+        alert(`금액 ${change}원은 500원 동전 ${num_500}개와 100원 동전 ${num_100}개가 필요합니다.`);
+    </script>
+</body>
+</html>
