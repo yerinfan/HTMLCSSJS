@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = Number(prompt("숫자를 입력하세요: "));
+		
+		for(let i = num; i >= 0; i--) {
+				for(let s = 1; s <= (num - i); s++) {
+						document.write("&nbsp");			
+				}
+			for(let j = 1 ; j <= 2 * i - 1; j++) {
+				document.write("*");
+			}document.write("<br>");
+		}
+    </script>
+</body>
+</html>
