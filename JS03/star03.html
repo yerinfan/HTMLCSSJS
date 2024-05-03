@@ -9,16 +9,17 @@
     <script>
         let num = Number(prompt("숫자를 입력하세요: "));
 
+		let str ="";
         for(let i = 1; i <= num; i++) {
 			for(let s = 1; s <= (num - i); s++) {
-					document.write(`&nbsp`);			
+					str += " ";			
 			}
 		for(let j = 1 ; j <= i; j++) {
-			document.write(`*`);
+			str += "*";
 		}
-		document.write(`<br>`);
+		str += "\n";
 		}
-
+		alert(str);
     </script>
 </body>
 </html>
