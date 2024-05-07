@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Test</title>
+    <script>
+        function gugudan() {
+            for(let i = 1; i <= 9; i++){
+                document.write(`3 x ${i} = ${3*i}<br>`);
+            }
+        }
+        const gugudanVar = function() {
+            for (let i = 1; i <= 9; i++){
+                document.write(`4 x ${i} = ${4*i}<br>`);
+            }
+        }
+        const gugudanArrow = () => {
+            for (let i = 1; i <= 9; i++){
+                document.write(`5 x ${i} = ${5*i}<br>`);
+            }
+        }
+        document.write(`<h3>선언적 함수 : 3단<h3>`);
+        gugudan();
+        document.write(`<h3>익명 함수 표현식 : 4단<h3>`);
+        gugudanVar();
+        document.write(`<h3>화살표 함수 : 5단<h3>`);
+        gugudanArrow();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
